@@ -1,10 +1,35 @@
+.main_content{
+  background-color: #86b6c5;
+}
+
 ul li{
   list-style-type: none;
   line-height: 1.5;
   text-transform: uppercase;
-  color: blue;
+  font-size: 1.25rem
 }
 
 .done-todo{
   text-decoration: line-through;
+}
+
+.container-1600{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+  position: relative;
+  max-width: 1600px;
+  width: 100%;
+}
+
+
+.form-size{
+  height: 50px;
+}
+
+.todo-listItem{
+  background-color: #fff;
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  box-shadow: 10px 10px 21px -1px rgba(0,0,0);
 }
