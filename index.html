@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Todo VueStyle</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <h1 class="text-center">{{ title }}</h1>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="mx-auto text-center w-100">
+                <input type="text" name="newTodo" v-model="newTodo" placeholder="Do Epic Shit">
+                <input type="submit" name="newTodo-submit" value="submit" v-on:click='onSubmit(newTodo)'>
+              </div>
+            </div>
+            <div class="col-12 col-lg-5">
+              <ul>
+                <li v-for="(todo, index) in todos"
+                  v-on:click='removeItem(index)'
+                  class="todo-listItem"
+                >{{ todo }}</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
