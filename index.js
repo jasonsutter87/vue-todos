@@ -15,7 +15,6 @@ let app = new Vue({
       newTodo = ''
     },
     removeItem(index) {
-      console.log(this)
       this.todos.splice(index, 1)
     }
   }

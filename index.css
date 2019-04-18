@@ -9,10 +9,6 @@ ul li{
   font-size: 1.25rem
 }
 
-.done-todo{
-  text-decoration: line-through;
-}
-
 .container-1600{
   padding-left: 15px;
   padding-right: 15px;
@@ -21,7 +17,6 @@ ul li{
   max-width: 1600px;
   width: 100%;
 }
-
 
 .form-size{
   height: 50px;
@@ -32,4 +27,8 @@ ul li{
   margin: 1rem 0;
   padding: 1rem 2rem;
   box-shadow: 10px 10px 21px -1px rgba(0,0,0);
+}
+
+.todo-listItem:hover{
+    text-decoration: line-through;
 }

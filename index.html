@@ -17,7 +17,7 @@
         <div class="row justify-content-center">
             <div class="col-12">
               <div class="mx-auto text-center">
-                <input type="text" name="newTodo" v-model="newTodo" placeholder="Do Epic Shit" class="w-75 form-size">
+                <input type="text" name="newTodo" v-model="newTodo" placeholder="Write Your Todo." class="w-75 form-size">
                 <input type="submit" name="newTodo-submit" value="submit" v-on:click='onSubmit(newTodo)' class="form-size">
               </div>
             </div>
@@ -25,8 +25,9 @@
               <ul class="text-center">
                 <li v-for="(todo, index) in todos"
                   v-on:click='removeItem(index)'
-                  class="todo-listItem"
-                >{{ todo }}</li>
+                  class="todo-listItem">
+                  {{ todo }}
+                </li>
               </ul>
             </div>
         </div>
